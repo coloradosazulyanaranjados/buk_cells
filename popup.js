@@ -16,14 +16,14 @@ async function vsCodeLink(path) {
   if (platform.platform === 'personal') {
     const personal_path = await settedPlatform('personal_path');
     root = personal_path.personal_path;
-    return `vscode://file\\${root}${path}`;
+    return `vscode://file/${root}${path}`;
   }
   else if (platform.platform === 'linux') {
     return `vscode://file/${path}`;
   } else if (platform.platform === 'wsl/ubuntu') {
-    return `vscode://file\\wsl.localhost\\Debian${path}`
+    return `vscode://file//wsl.localhost/Ubuntu${path}`
   } else if (platform.platform === 'wsl/debian') {
-    return `vscode://file\\wsl.localhost\\Ubuntu${path}`
+    return `vscode://file//wsl.localhost/Debian${path}`
   }
 }
 

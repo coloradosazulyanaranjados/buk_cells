@@ -18,10 +18,16 @@
         pero si se usa WSL, el path queda incompleto ya que no tiene acceso al root completo.
       </p>
       <p>
-        Ej: En WSL la extensión obtiene path\archivo.rb
+        Ej: En WSL la extensión obtiene path/archivo.rb
       </p>
       <p>
-        Pero debiera ser wsl.localhost\path\archivo.rb
+        Pero debiera ser wsl.localhost/path/archivo.rb
+      </p>
+      <p>
+        Por lo mismo en personalizado, se puede agregar el fragmento faltante /wsl.localhost
+      </p>
+      <p>
+       <strong>Importante notar que los slash van siempre a la derecha, vs code los inverte y debe comenzar por / y terminar sin /</strong>
       </p>
 
     </div>
