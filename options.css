@@ -1,0 +1,104 @@
+* {
+  color: #101010;
+}
+
+body {
+  background-color: #809ab5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.setting-button {
+  margin: 3px;
+}
+
+.title {
+  text-align: center;
+}
+
+.settings-block {
+  width: 80%;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.explanation {
+  font-size: 1rem;
+  width: 90%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.icon img {
+  width: 113px;
+  height: 113px;
+}
+
+/* btn original de Josh Comeau */
+
+.pushable {
+  background: #DEDBD2;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+.front {
+  display: block;
+  padding: 12px 11px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: #B0C4B1;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+  background: #6e9170;
+}
+
+.selected .front{
+  background: #6e9170;
+  transform: translateY(-4px)
+}
+
+.hidden {
+  display: none;
+}
+
+#input-section {
+  align-self: center;
+  margin-top: 20px;
+}
+
+#personal-input {
+  border-radius: 12px;
+  border: none;
+  height: 33px;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+#personal-input[type=text] {
+  padding-left: 10px;
+}
+
+#save-button .front{
+  font-size: 1rem;
+}
+
+#status {
+  font-size: 1rem;
+  margin-top: 5px;
+}

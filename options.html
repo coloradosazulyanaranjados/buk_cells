@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./options.css" />
+  <title>Opciones</title>
+</head>
+<body>
+  <div class="icon"><img src="images/morpheus.png" alt=""></div>
+  <h1 class="title">Configuración</h1>
+  <div class="settings-block">
+    <div class="explanation">
+      <p>
+        La extensión toma directo los comentarios del html que indican que Cell se está cargando,
+        no tiene problema para hacerlo en caso de que la App se esté corriendo de forma directa,
+        pero si se usa WSL, el path queda incompleto ya que no tiene acceso al root completo.
+      </p>
+      <p>
+        Ej: En WSL la extensión obtiene path\archivo.rb
+      </p>
+      <p>
+        Pero debiera ser wsl.localhost\path\archivo.rb
+      </p>
+
+    </div>
+    <div class="buttons">
+
+      <div class="setting-button" data-platform="linux">
+        <button class="pushable">
+          <span class="front">
+            Linux/Mac
+          </span>
+        </button>
+      </div>
+
+      <div class="setting-button" data-platform="wsl/ubuntu">
+        <button class="pushable">
+          <span class="front">
+            WSL/Ubuntu
+          </span>
+        </button>
+      </div>
+
+      <div class="setting-button" data-platform="wsl/debian">
+        <button class="pushable">
+          <span class="front">
+            WSL/Debian
+          </span>
+        </button>
+      </div>
+
+      <div class="setting-button" data-platform="personal">
+        <button class="pushable">
+          <span class="front">
+            Personalizado
+          </span>
+        </button>
+      </div>
+
+    </div>
+
+    <div id="input-section" class="hidden">
+      <input type="text" name='path' id="personal-input">
+      <button class="pushable personal" id="save-button">
+        <span class="front">
+          Guardar
+        </span>
+      </button>
+    </div>
+  </div>
+  <div id="status"></div>
+  <script src="./options.js" type="module"></script>
+</body>
+</html>

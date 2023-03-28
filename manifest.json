@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Buk Cells",
-  "version": "1.0",
+  "version": "1.5",
   "description": "Permite abrir los archivos mencionados en los comentarios del html de BUK, en VS Code.",
   "author": "tomas.konig.t@gmail.com",
   "icons": {
@@ -10,6 +10,7 @@
     "48": "images/morpheus.png",
     "128": "images/morpheus.png"
   },
+  "options_page": "options.html",
   "action": {
     "default_popup": "popup.html"
   },
@@ -20,5 +21,5 @@
       "js": ["content.js"]
     }
   ],
-  "permissions": ["activeTab", "scripting"]
+  "permissions": ["activeTab", "scripting", "storage"]
 }
