@@ -16,8 +16,7 @@ function getAllComments(rootElem) {
   let iterator = document.createNodeIterator(rootElem, NodeFilter.SHOW_COMMENT, filterNone, false);
   let curNode;
   while (curNode = iterator.nextNode()) {
-      let value = curNode.nodeValue
-      console.log(value);
+      let value = curNode.nodeValue;
       if (value.startsWith('\nclass_name')){
         let name =  value.match(/name:(.*)/)[1]
         let path = value.match(/path:\s+(.*)\n/)[1]

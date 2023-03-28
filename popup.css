@@ -1,25 +1,17 @@
 * {
   color: #dedbd2;
-  font-family: "Wotfard","Wotfard-fallback",sans-serif;;
 }
 
 body {
-  width: 30rem;
+  width: max-content;
+  min-width: 30rem;
   background-color: #809ab5;
-
-}
-
-h1 {
-  margin-left: 5px;
-  margin-bottom: 19px;
-  font-size: 30px;
 }
 
 ul {
   margin: 1rem 0;
   list-style-type: none;
   padding-inline-start: 0;
-  
 }
 
 li {
@@ -37,10 +29,60 @@ h3 {
 }
 
 .underline {
-  border-bottom: 4px solid currentColor;
+  border-bottom: 3px solid currentColor;
 }
 
+#top {
+  display: flex;
+  justify-content: space-between;
+}
 
+#top h1{
+  margin: 0;
+  font-size: 30px;
+}
+
+#top .front{
+  padding: 6px 11px;
+}
+
+#setting {
+  margin-top: 2px;
+}
+
+#setting img {
+  width: 15px;
+  height: 15px;
+}
+
+#init-setting img {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#copy {
+  margin-right: 2px;
+}
+
+#copy img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: -4px;
+}
+
+#copy .front {
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 1rem;
+}
 
 /* btn original de Josh Comeau */
 button, h3, p {
@@ -66,4 +108,8 @@ button, h3, p {
 
 .pushable:active .front {
   transform: translateY(-2px);
+}
+
+.hidden {
+  display: none;
 }

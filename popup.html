@@ -9,7 +9,12 @@
   <body>
     <template id="li_template">
       <li>
-        <button class="pushable">
+        <button class="pushable" id="copy">
+          <span class="front">
+            <img src="images/copy.png" alt="copy icon">
+          </span>
+        </button>
+        <button class="pushable" id="open">
           <span class="front">
             <h3 class="title">Tab Title</h3>
           </span>
@@ -17,10 +22,27 @@
       </li>
     </template>
 
-    <h1 id="title"> <span class="underline"> BUK VIEWS </span> </h1>
+    <div id="top">
+      <h1 id="title"> <span class="underline"> BUK CELLS </span> </h1>
+      <div id="status"></div>
+      <div id="setting" class="hidden">
+        <button class="pushable setting-button">
+          <span class="front">
+            <i><img src="images/setting.png" alt="Settings"></i>
+          </span>
+        </button>
+      </div>
+    </div>
     <ul>
     </ul>
-
+    <div id="init-setting" class="hidden">
+      <button class="pushable setting-button">
+        <span class="front">
+          <h3 class="title">Configurar</h3>
+          <i><img src="images/setting.png" alt="Settings"></i>
+        </span>
+      </button>
+    </div>
     <p><a href="https://www.flaticon.com/free-icons/matrix" target="_blank" title="matrix icons">Matrix icons created by sketchandbuild - Flaticon</a></p>
     <script src="./popup.js" type="module"></script>
   </body>
